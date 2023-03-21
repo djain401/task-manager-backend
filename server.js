@@ -21,7 +21,7 @@ app.listen(PORT, () => {
  * collection products is in test
  */
 
-mongoose.connect("mongodb://localhost:27017/Task_Manager", {
+mongoose.connect(process.env.MONGO_URL, {
   //useNewUrlParser: true,
   //strictQuery: false
 });
